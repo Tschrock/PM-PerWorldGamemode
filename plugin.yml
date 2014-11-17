@@ -1,0 +1,19 @@
+#name, main, version and api are required
+name: PerWorldGamemode
+main: PerWorldGamemode\PerWorldGamemode
+version: 0.0.1
+api: [1.0.0]
+
+load: POSTWORLD
+author: tschrock (tschrock123@gmail.com)
+description: Set differant gamemodes per world.
+website: http://www.tschrock.net
+commands:
+ pwgm:
+  description: Main Admin command.
+  usage: "Usage: /pwgm set <gamemode> (world) | /pwgm <include|exclude> <player>"
+  permission: perworldgamemode.command.pwgm
+permissions:
+ perworldgamemode.command.pwgm:
+  description: "Allows the user to run the pwgm command"
+  default: true

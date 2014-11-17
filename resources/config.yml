@@ -1,0 +1,4 @@
+# Default config for PerWorldGamemode plugin
+countdownTime: 5
+excludedPlayers: []
+worlds: []
