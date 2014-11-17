@@ -18,9 +18,6 @@ class PlayerEventListener implements Listener {
 
     /**
      * @param EntityLevelChangeEvent $event
-     *
-     * @priority NORMAL
-     * @ignoreCancelled false
      */
     public function onLevelChange(EntityLevelChangeEvent $event) {
         $entity = $event->getEntity();
@@ -31,9 +28,6 @@ class PlayerEventListener implements Listener {
 
     /**
      * @param PlayerRespawnEvent $event
-     *
-     * @priority NORMAL
-     * @ignoreCancelled false
      */
     public function onRespawn(PlayerRespawnEvent $event) {
         $this->plugin->checkPlayer($event->getPlayer());
@@ -41,8 +35,6 @@ class PlayerEventListener implements Listener {
 
     /**
      * @param PlayerQuitEvent $event
-     *
-     * @priority NORMAL
      * @ignoreCancelled true
      */
     public function onQuit(PlayerQuitEvent $event) {
