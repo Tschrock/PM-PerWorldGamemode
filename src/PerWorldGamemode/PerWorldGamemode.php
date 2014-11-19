@@ -19,19 +19,11 @@ class PerWorldGamemode extends PluginBase {
         $this->utilities = new Utilities($this);
     }
 
-    public function onLoad() {
-        
-    }
-
     public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents(new PlayerEventListener($this), $this);
 
         $this->saveDefaultConfig();
         $this->reloadConfig();
-    }
-
-    public function onDisable() {
-        
     }
 
     public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
